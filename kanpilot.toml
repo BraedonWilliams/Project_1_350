@@ -7,9 +7,9 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "task1"
-  title = "This is a new feature"
-  description = ""
+  id = "tukdd0ar2e96k2zh23wcvvvg"
+  title = "Create ERD"
+  description = "Create ERD & Get it approved by group."
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
@@ -20,17 +20,7 @@ name = "To Do"
 [[processes]]
 id = "process2"
 name = "In Progress"
-
-  [[processes.tasks]]
-  id = "task2"
-  title = "This is a bug should be repair"
-  description = ""
-  tag = "bug"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
+tasks = [ ]
 
 [[processes]]
 id = "process3"
