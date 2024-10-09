@@ -7,9 +7,9 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "tukdd0ar2e96k2zh23wcvvvg"
-  title = "Create ERD"
-  description = "Create ERD & Get it approved by group."
+  id = "regq6ogv9s7xtzqblwok0tvg"
+  title = "Create Database Script"
+  description = ""
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
@@ -20,9 +20,29 @@ name = "To Do"
 [[processes]]
 id = "process2"
 name = "In Progress"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "vkncupxeq0gwljjkz9gw6skp"
+  title = "Final Edits & Group ERD Approval"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
 [[processes]]
 id = "process3"
 name = "Done"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "tukdd0ar2e96k2zh23wcvvvg"
+  title = "Create ERD"
+  description = "Create ERD & Get it approved by group."
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
