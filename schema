@@ -1,0 +1,109 @@
+
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS public."State"
+(
+    "stateID" serial NOT NULL,
+    "stateName" character varying(250) NOT NULL,
+    PRIMARY KEY ("stateID")
+);
+
+CREATE TABLE IF NOT EXISTS public."Incident"
+(
+    "incidentID" serial NOT NULL,
+    date date,
+    location character varying(250),
+    PRIMARY KEY ("incidentID")
+);
+
+CREATE TABLE IF NOT EXISTS public."Crime"
+(
+    "crimeID" serial NOT NULL,
+    "crimeTypeDesc" character varying(350) NOT NULL,
+    PRIMARY KEY ("crimeID")
+);
+
+CREATE TABLE IF NOT EXISTS public."Offender"
+(
+    "offenderID" serial NOT NULL,
+    "firstName" character varying(250),
+    "lastName" character varying(250),
+    age integer,
+    sex character varying,
+    race character varying,
+    ethnicity character varying,
+    PRIMARY KEY ("offenderID")
+);
+
+CREATE TABLE IF NOT EXISTS public."Victim"
+(
+    "victimID" serial NOT NULL,
+    age integer,
+    sex character varying(250),
+    race character varying(250),
+    ethnicity character varying(250),
+    "relationshipToOffender" character varying(500),
+    PRIMARY KEY ("victimID")
+);
+
+CREATE TABLE IF NOT EXISTS public."Incident_Crime_Offender"
+(
+    "incidentID" serial NOT NULL,
+    "offenderID" serial NOT NULL,
+    "crimeID" serial NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS public."Incident_Victim"
+(
+    "Incident_incidentID" serial NOT NULL,
+    "Victim_victimID" serial NOT NULL
+);
+
+ALTER TABLE IF EXISTS public."Incident"
+    ADD FOREIGN KEY ("incidentID")
+    REFERENCES public."State" ("stateID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public."Incident_Crime_Offender"
+    ADD FOREIGN KEY ("incidentID")
+    REFERENCES public."Incident" ("incidentID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public."Incident_Crime_Offender"
+    ADD FOREIGN KEY ("crimeID")
+    REFERENCES public."Crime" ("crimeID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public."Incident_Crime_Offender"
+    ADD FOREIGN KEY ("offenderID")
+    REFERENCES public."Offender" ("offenderID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public."Incident_Victim"
+    ADD FOREIGN KEY ("Incident_incidentID")
+    REFERENCES public."Incident" ("incidentID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public."Incident_Victim"
+    ADD FOREIGN KEY ("Victim_victimID")
+    REFERENCES public."Victim" ("victimID") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+END;
