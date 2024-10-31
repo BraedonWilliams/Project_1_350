@@ -7,8 +7,30 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "regq6ogv9s7xtzqblwok0tvg"
-  title = "Create Database Script"
+  id = "yyqhavux0q9cn66djanizle6"
+  title = "Insert State Values"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "qw7c23nr67ljaycgu2b4oeit"
+  title = "Insert Crime Values"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "xjv2ipk8m4uzsa4sl5dexff8"
+  title = "Assign States to Group Members"
   description = ""
   tag = "backlog"
   linkFiles = [ ]
@@ -20,6 +42,11 @@ name = "To Do"
 [[processes]]
 id = "process2"
 name = "In Progress"
+tasks = [ ]
+
+[[processes]]
+id = "process3"
+name = "Done"
 
   [[processes.tasks]]
   id = "vkncupxeq0gwljjkz9gw6skp"
@@ -32,9 +59,16 @@ name = "In Progress"
   priority = ""
   linkCommits = [ ]
 
-[[processes]]
-id = "process3"
-name = "Done"
+  [[processes.tasks]]
+  id = "regq6ogv9s7xtzqblwok0tvg"
+  title = "Create Database Script"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
   [[processes.tasks]]
   id = "tukdd0ar2e96k2zh23wcvvvg"
