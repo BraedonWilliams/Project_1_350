@@ -7,6 +7,21 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
+  id = "xjv2ipk8m4uzsa4sl5dexff8"
+  title = "Assign States to Group Members"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+[[processes]]
+id = "process2"
+name = "In Progress"
+
+  [[processes.tasks]]
   id = "yyqhavux0q9cn66djanizle6"
   title = "Insert State Values"
   description = ""
@@ -27,22 +42,6 @@ name = "To Do"
   checkList = [ ]
   priority = ""
   linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "xjv2ipk8m4uzsa4sl5dexff8"
-  title = "Assign States to Group Members"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-[[processes]]
-id = "process2"
-name = "In Progress"
-tasks = [ ]
 
 [[processes]]
 id = "process3"
