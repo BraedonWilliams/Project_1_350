@@ -1,6 +1,6 @@
 -- Database: usa_crime
-  
-ALTER TABLE IF EXISTS public."Incident" DROP CONSTRAINT IF EXISTS "Incident_incidentID_fkey";
+
+ALTER TABLE IF EXISTS public."Incident" DROP CONSTRAINT IF EXISTS None;
 
 ALTER TABLE IF EXISTS public."Incident_Crime_Offender" DROP CONSTRAINT IF EXISTS "Incident_Crime_Offender_crimeID_fkey";
 
@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS public."Incident"
     "incidentID" bigint NOT NULL,
     date date,
     location character varying(250) COLLATE pg_catalog."default",
+    "stateID" bigint,
     CONSTRAINT "Incident_pkey" PRIMARY KEY ("incidentID")
 );
 
@@ -86,13 +87,11 @@ CREATE TABLE IF NOT EXISTS public."Victim"
 );
 
 ALTER TABLE IF EXISTS public."Incident"
-    ADD CONSTRAINT "Incident_incidentID_fkey" FOREIGN KEY ("incidentID")
+    ADD FOREIGN KEY ("stateID")
     REFERENCES public."State" ("stateID") MATCH SIMPLE
     ON UPDATE CASCADE
     ON DELETE CASCADE
     NOT VALID;
-CREATE INDEX IF NOT EXISTS "Incident_pkey"
-    ON public."Incident"("incidentID");
 
 
 ALTER TABLE IF EXISTS public."Incident_Crime_Offender"
@@ -133,4 +132,3 @@ ALTER TABLE IF EXISTS public."Incident_Victim"
     ON UPDATE CASCADE
     ON DELETE CASCADE
     NOT VALID;
-    
