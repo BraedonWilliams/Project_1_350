@@ -17,31 +17,32 @@ name = "To Do"
   priority = ""
   linkCommits = [ ]
 
+  [[processes.tasks]]
+  id = "cib65lacg13s54pnh2i1pa4s"
+  title = "Create A List Of Procedures We Would Like To Include"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "ce0lmvwu6ani5k06rwijlb1c"
+  title = "Create a List of Functions to Include"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
 [[processes]]
 id = "process2"
 name = "In Progress"
-
-  [[processes.tasks]]
-  id = "yyqhavux0q9cn66djanizle6"
-  title = "Insert State Values"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "qw7c23nr67ljaycgu2b4oeit"
-  title = "Insert Crime Values"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
+tasks = [ ]
 
 [[processes]]
 id = "process3"
@@ -73,6 +74,28 @@ name = "Done"
   id = "tukdd0ar2e96k2zh23wcvvvg"
   title = "Create ERD"
   description = "Create ERD & Get it approved by group."
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "qw7c23nr67ljaycgu2b4oeit"
+  title = "Insert Crime Values"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "yyqhavux0q9cn66djanizle6"
+  title = "Insert State Values"
+  description = ""
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
