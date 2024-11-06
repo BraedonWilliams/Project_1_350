@@ -1,12 +1,12 @@
 INSERT INTO public."State"("stateID", "stateName")VALUES 
-	(1, 'Alaska'),
-	(2,'Alabama'),
+	(1, 'Alaska'), 
+	(2,'Alabama'), 
 	(3, 'Arkansas'),
 	(4, 'American Samoa'),
 	(5, 'Arizona'),
 	(6, 'California'),
-	(7, 'Colorado'),
-	(8, 'Connecticut'),
+	(7, 'Colorado'), --
+	(8, 'Connecticut'), --
 	(9, 'Canal Zone'),
 	(10, 'District of Columbia'),
 	(11, 'Delaware'),

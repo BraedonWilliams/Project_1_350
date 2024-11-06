@@ -7,17 +7,6 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "xjv2ipk8m4uzsa4sl5dexff8"
-  title = "Assign States to Group Members"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
   id = "cib65lacg13s54pnh2i1pa4s"
   title = "Create A List Of Procedures We Would Like To Include"
   description = ""
@@ -39,31 +28,32 @@ name = "To Do"
   priority = ""
   linkCommits = [ ]
 
+  [[processes.tasks]]
+  id = "v470zxyrwzk363y8bcdj3ie3"
+  title = "Assign Funcs/Procs to team members"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "jaleevc5w25amv7i5hp3jgq7"
+  title = "Export the database as a backup (.tar)"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
 [[processes]]
 id = "process2"
 name = "In Progress"
-
-  [[processes.tasks]]
-  id = "sukx638dmzpajh48gp1tecba"
-  title = "Alabama Data Insertion"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "aw3hmg5n08zixqk698dzhoiv"
-  title = "Alaska Data Insertion"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
+tasks = [ ]
 
 [[processes]]
 id = "process3"
@@ -114,8 +104,41 @@ name = "Done"
   linkCommits = [ ]
 
   [[processes.tasks]]
+  id = "aw3hmg5n08zixqk698dzhoiv"
+  title = "Alaska Data Insertion"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "sukx638dmzpajh48gp1tecba"
+  title = "Alabama Data Insertion"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
   id = "yyqhavux0q9cn66djanizle6"
   title = "Insert State Values"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "ba0y7xaq68dl1ye4fhsiewzl"
+  title = "Insert all data for all states"
   description = ""
   tag = "backlog"
   linkFiles = [ ]
