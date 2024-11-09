@@ -7,39 +7,6 @@ id = "process1"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "cib65lacg13s54pnh2i1pa4s"
-  title = "Create A List Of Procedures We Would Like To Include"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "ce0lmvwu6ani5k06rwijlb1c"
-  title = "Create a List of Functions to Include"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "v470zxyrwzk363y8bcdj3ie3"
-  title = "Assign Funcs/Procs to team members"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
   id = "jaleevc5w25amv7i5hp3jgq7"
   title = "Export the database as a backup (.tar)"
   description = ""
@@ -139,6 +106,39 @@ name = "Done"
   [[processes.tasks]]
   id = "ba0y7xaq68dl1ye4fhsiewzl"
   title = "Insert all data for all states"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "cib65lacg13s54pnh2i1pa4s"
+  title = "Create A List Of Procedures We Would Like To Include"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "ce0lmvwu6ani5k06rwijlb1c"
+  title = "Create a List of Functions to Include"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "v470zxyrwzk363y8bcdj3ie3"
+  title = "Assign Funcs/Procs to team members"
   description = ""
   tag = "backlog"
   linkFiles = [ ]
