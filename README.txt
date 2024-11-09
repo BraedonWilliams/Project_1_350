@@ -1,26 +1,21 @@
 This project is authored by: Braedon Williams, Megan Naylor & Dana Cavanagh
 
 This is an SQL database focusing on crime in the United States.
-Our dataset can be found here: ##FIXME
+Our data can be found here: https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/downloads
+Everything in the dataset is accurate to the data source, EXCEPT the offender names are randomly generated.
+
+Because our project required a large amount of data insertion, we decided to create a python script to parse
+the data directly from the source into an SQL file full of data insertions. For each of the 50 states we have
+between 20 and 300 offenders. We did not insert data for other areas like "Federal" or "Canal Zone" even though
+these are in the data set. 
 
 
-
-Setting up the database: (recap of class2 + order of operations)
-Step 1: make sure you have a postgres account (ex: 'abc' with password 'abcd'). See class 2.
-Step 1: use command "sudo -u postgres psql"      -- this will log into the postgres account.
-Step 2: use command "CREATE DATABASE usa_crime;" -- this creates the empty database.
-Step 3: use "\l" to confirm the database was created.
-Step 4: exit the prompt with '\q'.
-Step 5: use "cd" to navigate to the location of your sql files (Project_1_350).
-Step 6: use "psql -U <USERNAME> -d usa_crime -h localhost" --this logs into the database using your user account. It will prompt for your password.
-Step 7:  "\i schema.sql"       -- sets up the database schema
-Step 8:  "\i insertCrimes.sql" -- inserts data into Crime table.
-Step 9:  "\i insertStates.sql" -- inserts data into State table.
-Step 10: "\i insertData.sql"   -- inserts the rest of the data. This may take a while.
-Step 11: "\i procedures.sql"   -- inserts the procedures.
-
-Now the database is set up with everything we have so far.
-
-Step 12: "quit;" to exit the psql prompt. 
-Step 13: type "pgadmin4" into your terminal to open pgadmin4
-Step 14: under "databases" you should see "usa_crime" (DM me if that is not the case, and i can help with setup! :] )
+Setting up the database:
+- The database is called "usa_crime"
+- Insert the data files in the following order:
+-- schema.sql 
+-- insertCrimes.sql
+-- insertStates.sql
+-- insertData.sql
+-- procedures.sql
+-- functions.sql
